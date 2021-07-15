@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Añadir</title>
+</head>
+<body>
+    <header>
+        <div class="descuento">20% de decuento en todos los productos</div>
+        <div class="nombre-tienda">
+            <img src="../img/logo-tienda.png" alt="Este es el logo de la tienda">
+            <p>Nombre tienda</p>
+        </div>
+        <div class="menu-nav">
+            <nav>
+                <ul>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="registro.html">Registrarme</a></li>
+                    <li><a href="login.html">Ingresar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <form action="" id="add-character">
+            <div class="encabezado">
+                <h2>Añadí tu súper!</h2>
+                <p>Agrega tu personaje favorito completando las opciones</p>
+            </div>
+            <div class="formulario parte-1">
+                <div>
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" id="nombre">  
+                </div>
+                <div>
+                    <label for="especie">*Especie</label>
+                    <select name="" id="especie">
+                        <option value="" disabled>Especie</option>
+                    </select>
+                </div>
+            </div>
+            <div class="formulario parte-2">
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="datetime" id="fecha" placeholder="dd/mm/yyyy">
+                </div>
+                <div>
+                    <label for="foto">Agregar foto</label>
+                    <input type="file" id="foto">
+                </div>
+            </div>
+            <div class="formulario parte-3">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descripción"></textarea>
+                <div class="select-characteristics">
+                    <h4>Poderes</h4>
+                    <div class="characteristic">
+                        <input type="checkbox" name="poderes">
+                        <span>Volar</span>
+                    </div>
+                    <div class="characteristic">
+                        <input type="checkbox" name="poderes">
+                        <span>Súper inteligencia</span>
+                    </div>
+                    <div class="characteristic">
+                        <input type="checkbox" name="poderes">
+                        <span>Vista de rayo láser</span>
+                    </div>
+                    <div class="characteristic">
+                        <input type="checkbox" name="poderes">
+                        <span>Billetera gorda</span>
+                    </div>
+                    <hr>                                 
+                    <h4>Tipo de personaje</h4>
+                    <div class="characteristic">
+                        <input type="radio" name="tipo">
+                        <span>Héroe/Heroína</span>
+                    </div>
+                    <div class="characteristic">
+                        <input type="radio" name="tipo">
+                        <span>Villano/vilana</span>
+                    </div>
+                </div>
+            </div>
+            <button type="submit">Añadir</button>
+        </form>
+    </main>
+    <footer>
+        <p>Todos los derechos reservados a FRONT END 1</p>
+        <img src="../img/icons/github-logo.png" alt="Logo de GitHub">
+    </footer>
+</body>
+</html>
