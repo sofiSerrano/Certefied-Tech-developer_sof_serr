@@ -39,21 +39,26 @@ function obtenerDatosDelUsuario() {
   let edad  = parseInt(prompt(`Ingrese año de nacimiento `))
   let ciudad=prompt(`Ingrese ciudad `)
   let interesJs=confirm(`¿Le interesa Javascript? `)
-  datosPersona.nombre()=nombre
+  datosPersona.nombre = nombre
   let anioact=new Date().getFullYear();
-  datosPersona.edad()=anioact - edad 
-  datosPersona.ciudad()=ciudad
-  datosPersona.interesPorJs()=interesJs
+  datosPersona.edad = anioact - edad 
+  datosPersona.ciudad = ciudad
 
-  alert()
+  datosPersona.interesPorJs = (interesJs == true ? "Sí" : "No")
 }
 
 function renderizarDatosUsuario() {
   /* ------------------- NO TOCAR NI ELIMINAR ESTA FUNCION. ------------------- */
   obtenerDatosDelUsuario();
   /* --------------- PUNTO 2: Escribe tu codigo a partir de aqui --------------- */
-  let nombre=document.
-
+  let nombr=document.createTextNode(datosPersona.nombre)
+  let eda=document.createTextNode(datosPersona.edad)
+  let ciuda=document.createTextNode(datosPersona.ciudad)
+  let jsIntere=document.createTextNode(datosPersona.interesPorJs)
+  document.getElementById("nombre").appendChild(nombr);
+  document.getElementById("edad").appendChild(eda)
+  document.getElementById("ciudad").appendChild(ciuda)
+  document.getElementById("javascript").appendChild(jsIntere)
 
 }
 
